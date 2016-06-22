@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ggomdol.fantacydiary.WriteActivity">
+
+    <LinearLayout
+        android:id="@+id/test_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ToggleButton
+            android:id="@+id/bold_tb"
+                android:textSize="20sp"
+                android:text="B"
+                android:textOn="B"
+                android:textOff="B"
+                android:textStyle="bold"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+                android:layout_weight="1.0"
+            />
+
+            <ToggleButton
+                android:id="@+id/italic_tb"
+                android:textSize="20sp"
+                android:text="I"
+                android:textOn="I"
+                android:textOff="I"
+                android:textStyle="italic"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_weight="1.0"
+                />
+
+            <ToggleButton
+                android:id="@+id/underline_tb"
+                android:textSize="20sp"
+                android:text="@string/underlineU"
+                android:textOn="@string/underlineU"
+                android:textOff="@string/underlineU"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_weight="1.0"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/font_size_plus_tb"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:text="A+"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:id="@+id/font_size_tv"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip" />
+
+                <Button
+                    android:id="@+id/font_size_minus_tb"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:text="A-"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/font_color_ib"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/edit_memu_font_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:scaleType="fitXY"
+                android:src="@drawable/edit_memu_background_color"
+                android:layout_weight="1.0"
+                android:id="@+id/background_bt"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:text="background" />
+
+            <ImageButton
+                android:id="@+id/image_insert_ib"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_weight="1.0"
+                android:scaleType="fitXY"
+                android:src="@drawable/edit_menu_attachment" />
+
+            <ImageButton
+                android:id="@+id/load_ib"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_weight="1.0"
+                android:scaleType="fitXY"
+                android:src="@drawable/edit_menu_load" />
+
+            <ImageButton
+                android:id="@+id/save_ib"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_weight="1.0"
+                android:scaleType="fitXY"
+                android:src="@drawable/edit_menu_save" />
+
+            <ImageButton
+                android:id="@+id/delete_ib"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_weight="1.0"
+                android:scaleType="fitXY"
+                android:src="@drawable/edit_menu_delete" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/test_ll"
+        android:fillViewport="true">
+
+        <ggomdol.ggomdoleditor.GGomdolEditor
+            android:id="@+id/ggomdol_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top" />
+    </ScrollView>
+
+</RelativeLayout>
