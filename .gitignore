@@ -5,4 +5,8 @@
 /.idea/libraries
 .DS_Store
 /build
+/ggomdoleditor
+/.idea
 /captures
+.svn/
+ggomdoleditor/
