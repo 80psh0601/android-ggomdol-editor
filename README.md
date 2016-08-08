@@ -1,6 +1,6 @@
 # android-ggomdol-editor
 
-![Images](https://photos.google.com/share/AF1QipNbFQnS6g-UaPCFfwZ_eFNVVmFq1V806DNdrkT0bKKgui8yLK-IECUAKO_xfMCvJg/photo/AF1QipOimjLN7pGHbUIP15BPdDh6EJQOzRfotBT5zfHf?key=azdEWnFPN3FGRldqM1laVW5LMHZaaHRqLWdHNVNn)
+![Images](https://photos.google.com/share/AF1QipMlz70au7RawOryLDngD7pF7FQt9DDnhwUY7cV8huM5VeLufHyiD_Hx9q9SD-GRtA/photo/AF1QipMk6MCIN2C9Ghc4y5qiD3H3CvxrXXuU9X03SwqP?key=MFhhMWdaOEN6aXVkWGdEVmdTQnR4eGJDZVU5dzlB)
 
 The Editor on Android Platform 
 
